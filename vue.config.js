@@ -1,6 +1,9 @@
-const path = require('path')
+const path = require("path");
 
 module.exports = {
+  // For GitHub Page Deployment
+  publicPath: "/profile",
+  outputDir: "docs",
   configureWebpack: {
     resolve: {
       alias: {
