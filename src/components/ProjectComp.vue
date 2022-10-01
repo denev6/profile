@@ -39,7 +39,7 @@ export default {
 }
 .project-card:hover {
   box-shadow: 0 20px 25px -5px rgb(0 0 0 / 0.1),
-    0 8px 10px -6px rgb(0 0 0 / 0.1);
+  0 8px 10px -6px rgb(0 0 0 / 0.1);
 }
 .project-card > h3 {
   margin-bottom: 2.5rem;
@@ -58,5 +58,19 @@ export default {
 }
 .tags:hover {
   opacity: 0.8;
+}
+@media (max-width: 640px) {
+  .tags {
+    font-size: 0.7rem;
+    opacity: 0.8;
+  }
+  .project-card {
+    padding: 1rem 0.7rem;
+  }
+  .project-card > h3 {
+    font-size: 1rem;
+    font-weight: 500;
+    margin-bottom: 0.6rem;
+  }
 }
 </style>

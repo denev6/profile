@@ -93,4 +93,18 @@ hr {
 .stack-wrapper .sub:hover {
   opacity: 0.7;
 }
+@media (max-width: 640px) {
+  h1 {
+    font-size: 2rem;
+  }
+  h1+span {
+    font-size: 0.8rem;
+  }
+  .stack-wrapper .sub {
+    opacity: 0.5;
+  }
+  .stack-wrapper .sub:hover {
+    opacity: 0.5;
+  }
+}
 </style>

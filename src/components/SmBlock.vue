@@ -25,10 +25,16 @@ export default {
   width: fit-content;
   border-radius: 5px;
   font-size: 0.9rem;
+  cursor: default;
 }
 .stack-img {
   display: inline-block;
   width: 1rem;
   margin-right: 0.5rem;
+}
+@media (max-width: 640px) {
+  .stack {
+    font-size: 0.8rem;
+  }
 }
 </style>

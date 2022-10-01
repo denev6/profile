@@ -11,7 +11,7 @@ export default {
     path: "/pincette",
   },
   profile: {
-    title: "개인 소개 페이지 (현재)",
+    title: "소개 페이지 (현재)",
     tags: ["Vue.js", "Tailwindcss", "HTML5", "CSS3"],
     path: "/profile",
   },
@@ -19,10 +19,5 @@ export default {
     title: "프로그래밍 지식 공유",
     tags: ["Naver Blog"],
     path: "/naver-blog",
-  },
-  happiness: {
-    title: "헹복지수 데이터 분석",
-    tags: ["Numpy", "Pandas", "Matplotlib", "Sklearn"],
-    path: "/happiness",
-  },
+  }
 };
