@@ -5,8 +5,6 @@
   </div>
 </template>
 
-<script></script>
-
 <style>
 #modal {
   width: 100vw;
@@ -27,11 +25,18 @@
   transform: translate(-50%, -50%);
 }
 #close-tab {
-    position: fixed;
-    top: 30px;
-    right: 30px;
-    font-weight: 300;
-    font-size: 0.8rem;
-    color: #ffffff;
+  position: fixed;
+  top: 3rem;
+  right: 3rem;
+  font-weight: 300;
+  font-size: 0.8rem;
+  color: #ffffff;
+  animation: blinker 2s linear infinite;
+}
+
+@keyframes blinker {
+  50% {
+    opacity: 0.6;
+  }
 }
 </style>

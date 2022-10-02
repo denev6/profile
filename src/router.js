@@ -1,22 +1,26 @@
 import { createWebHistory, createRouter } from "vue-router";
-import AboutComp from "./components/AboutComp.vue";
-import ProjectComp from "./components/ProjectComp.vue";
-import NotFound from "./components/NotFound.vue";
-import NaverView from "./components/pages/NaverView.vue";
-import PincetteView from "./components/pages/PincetteView.vue";
-import ProfileView from "./components/pages/ProfileView.vue";
-import PyautoguiView from "./components/pages/PyautoguiView.vue";
+import AboutView from "./components/AboutView";
+import ProjectView from "./components/ProjectView";
+import NotFoundView from "./components/NotFoundView";
+import NaverView from "./components/view/NaverView";
+import PincetteView from "./components/view/PincetteView";
+import ProfileView from "./components/view/ProfileView";
+import PyautoguiView from "./components/view/PyautoguiView";
 
 const routes = [
   {
     path: "/",
     name: "about",
-    component: AboutComp,
+    component: AboutView,
+  },
+  {
+    path: "/profile",
+    redirect: "/",
   },
   {
     path: "/project",
     name: "project",
-    component: ProjectComp,
+    component: ProjectView,
   },
   {
     path: "/naver-blog",
@@ -29,8 +33,8 @@ const routes = [
     component: PincetteView,
   },
   {
-    path: "/profile",
-    name: "profile",
+    path: "/vue-page",
+    name: "vue-page",
     component: ProfileView,
   },
   {
@@ -40,8 +44,8 @@ const routes = [
   },
   {
     path: "/404",
-    name: "notFound",
-    component: NotFound,
+    name: "notFoundView",
+    component: NotFoundView,
   },
   {
     path: "/:pathMatch(.*)*",
@@ -51,6 +55,9 @@ const routes = [
 
 const router = createRouter({
   history: createWebHistory(),
+  scrollBehavior() {
+    return { top: 0 };
+  },
   routes,
 });
 

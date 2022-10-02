@@ -1,8 +1,9 @@
 <template>
-  <h1 id="inner-title">{{ title }}</h1>
-  <div class="inner-tags" v-for="(tag, i) in tags" :key="i">{{ tag }}</div>
-  <hr id="inner-hr" />
+  <h1 id="article_title">{{ title }}</h1>
+  <div class="article_tags" v-for="(tag, i) in tags" :key="i">{{ tag }}</div>
+  <hr id="article_hr" />
 </template>
+
 <script>
 export default {
   props: {
@@ -15,61 +16,61 @@ export default {
   },
 };
 </script>
+
 <style>
-#inner-title {
+#article_title {
   font-size: 2rem;
   margin-bottom: 1rem;
   word-wrap: keep-all;
 }
-.inner-tags {
+.article_tags {
   display: inline-block;
-  margin: 0.3rem;
-  background-color: #f1f5f9;
-  padding: 0.3rem 0.6rem;
+  margin: 0.4rem;
+  background-color: #f5f5f5;
+  padding: 0.2rem 0.4rem;
   width: fit-content;
   border-radius: 5px;
   font-size: 0.8rem;
   font-weight: 300;
+  letter-spacing: 0.04rem;
 }
-#inner-hr {
-  color: #f1f5f9;
+#article_hr {
+  color: #f5f5f5;
   opacity: 0.3;
   margin: 3rem auto;
 }
-/* CSS for sub-Pages import current view.
- * <class="inner"> sub-Pages content </>
+
+/* CSS for sub-Pages in '@/components/view/~View'
+ * Use <article> tag to format main text
 */
-.inner {
+.article {
   line-height: 1.6;
   width: 100%;
   word-wrap: keep-all;
 }
-.inner > img {
+article > img {
   max-width: 80%;
   max-height: 40vh;
   margin: 2rem auto;
   display: block;
 }
-.inner > h3 {
+article > h3 {
   margin-top: 5rem;
-  color: #15803d;
+  color: #0f766e;
 }
-.inner p ~ ul > li {
+article p ~ ul > li {
   line-height: 1.6rem;
 }
 
 @media (max-width: 640px) {
-  #inner-title {
-    font-size: 1.5rem;
-    margin: 0px 0.5rem 1rem 0.5rem;
+  #article_title {
+    font-size: 1.4rem;
+    margin: 0px 0.4rem 1rem 0.4rem;
   }
-  /* CSS for sub-Pages import current view.
- * <class="inner"> sub-Pages content </>
-*/
-  .inner {
+  article {
     font-size: 0.8rem;
     font-weight: 300;
-    margin: 0px 0.3rem;
+    margin: 0px 0.2rem;
   }
 }
 </style>

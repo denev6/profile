@@ -1,6 +1,6 @@
 <template>
-  <BaseView :title="project.title" :tags="project.tags"></BaseView>
-  <div class="inner">
+  <TitleComp :title="project.title" :tags="project.tags"></TitleComp>
+  <article>
     <p>
       GitHub 코드 공개:
       <a href="https://github.com/Denev6/image-data-crawler" target="_blank"
@@ -42,10 +42,12 @@
       상황이 발생할 수 있습니다. 따라서 비동기 처리를 통해 응답 지연이 발생할 때 
       다른 이미지 처리가 가능하도록 개선해 볼 수 있습니다. 
     </p>
-  </div>
+  </article>
 </template>
+
 <script>
-import project from "@/project";
+import project from "@/data/project";
+
 export default {
   data() {
     return {

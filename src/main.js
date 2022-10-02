@@ -1,8 +1,9 @@
-import { createApp } from 'vue'
-import App from './App.vue'
-import router from "./router.js"
-import BaseView from "./components/pages/BaseView.vue";
+import { createApp } from "vue";
+import App from "./App";
+import router from "./router";
+import TitleComp from "@/components/view/TitleComp";
 
-const app = createApp(App)
-app.component("BaseView", BaseView)
-app.use(router).mount('#app')
+const app = createApp(App);
+app.component("TitleComp", TitleComp);
+app.use(router);
+app.mount("#app");

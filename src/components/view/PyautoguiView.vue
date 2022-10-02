@@ -1,6 +1,6 @@
 <template>
-  <BaseView :title="project.title" :tags="project.tags"></BaseView>
-  <div class="inner">
+  <TitleComp :title="project.title" :tags="project.tags"></TitleComp>
+  <article>
     <p>
       GitHub 코드 공개: <a href="https://github.com/Denev6/face-mouse-control" target="_blank">github.com/Denev6/face-mouse-control</a><br/>
     </p>
@@ -53,7 +53,7 @@
       것이 목표였습니다. 이를 위해 여러 모델과 알고리즘을 테스트하며 최적의 방법을 
       찾아냈고 최종적으로 저전력 노트북 CPU에서 동작하는 것을 확인하였습니다. 
     </p>
-  </div>
+  </article>
   <ModalView
     v-if="modalState == true"
     @click="modalState = false"
@@ -61,8 +61,9 @@
 </template>
 
 <script>
-import project from "@/project";
-import ModalView from "./ModalView.vue";
+import project from "@/data/project";
+import ModalView from "./ModalView";
+
 export default {
     data() {
         return {
@@ -70,21 +71,22 @@ export default {
             modalState: false
         };
     },
-    components: { ModalView }
+  components: {ModalView}
 };
 
 </script>
+
 <style>
-.inner > button {
+article > button {
   border: 0px;
   border-radius: 3px;
-  background-color: #e2e8f0;
+  background-color: #f5f5f5;
   font-weight: 700;
   cursor: pointer;
 }
-.inner > button:hover {
-  background-color: #15803d;
-  color: #e2e8f0;
+article > button:hover {
+  background-color: #0f766e;
+  color: #f5f5f5;
   opacity: 0.2;
 }
 </style>

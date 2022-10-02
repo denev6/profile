@@ -1,7 +1,6 @@
-
 export default {
   pyautogui: {
-    title: "얼굴 인식과 Pyautogui 마우스 제어 기반의 비접촉식 입력 기법",
+    title: "얼굴 인식 기반의 마우스 제어",
     tags: ["Opencv", "Pyautogui", "Mediapipe", "Python"],
     path: "/pyautogui",
   },
@@ -13,11 +12,11 @@ export default {
   profile: {
     title: "소개 페이지 (현재)",
     tags: ["Vue.js", "Tailwindcss", "HTML5", "CSS3"],
-    path: "/profile",
+    path: "/vue-page",
   },
   naverBlog: {
     title: "프로그래밍 지식 공유",
-    tags: ["Naver Blog"],
+    tags: ["Naver-Blog"],
     path: "/naver-blog",
-  }
+  },
 };

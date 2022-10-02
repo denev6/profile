@@ -1,6 +1,6 @@
 <template>
-  <BaseView :title="project.title" :tags="project.tags"></BaseView>
-  <div class="inner">
+  <TitleComp :title="project.title" :tags="project.tags"></TitleComp>
+  <article>
     <img src="@/assets/logo.png" />
     <h3>시작하게된 이유</h3>
     <p>
@@ -14,7 +14,9 @@
       블로그를 직접 커스텀하면서 어떻게 해야 가독성이 높아질까를 고민했었습니다.
       과거에는 여러 장치를 채워 넣어 문제를 해결하려 했지만 기능을 확대하는 것이
       아니라 정보량을 줄여야 한다는 것을 알게 되었습니다. 따라서 여백을 활용해 공간을
-      분리하고 정보를 조금씩 나누어 받아들일 수 있도록 제작하였습니다. 
+      분리하고 정보를 조금씩 나누어 받아들일 수 있도록 제작하였습니다. 또한 모바일 디바이스 
+      사용 시 불편함이 없도록 nav나 :hover과 같은 요소는 미디어 쿼리를 이용해 
+      추가로 설정해 주었습니다. 
     </p>
     <h3>제작 기술</h3>
     <p>
@@ -28,25 +30,28 @@
         <li>Vue.js<span>: MIT License</span></li>
         <li>Tailwindcss<span>: MIT License</span></li>
         <li>Bootstrap Icons<span>: MIT License</span></li>
-        <li>Noto Sans Kr<span>: OFL</span></li>
+        <li>Noto Sans KR<span>: OFL</span></li>
         <li>Simple Icons<span>: CC0 1.0 Universal</span></li>
       </ul>
     </p>
-  </div>
+  </article>
 </template>
+
 <script>
-import project from "@/project";
+import project from "@/data/project";
+
 export default {
   data() {
     return {
       project: project.profile,
     };
-  },
+  }
 };
 </script>
+
 <style>
-  ul > li > span {
+  article p ~ ul > li > span {
     font-weight: 300;
-    color: #64748b;
+    color: #a3a3a3;
   }
 </style>
