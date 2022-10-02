@@ -13,15 +13,15 @@ From ['_Tailwindcss-Color_'](https://tailwindcss.com/docs/customizing-colors)
 
 **Neutral**
 
-- 100 `#f5f5f5` <span style="color:#f5f5f5">∎∎∎</span>
-- 500 `#a3a3a3` <span style="color:#a3a3a3">∎∎∎</span>
-- 700 `#404040` <span style="color:#404040">∎∎∎</span>
-- 900 `#171717` <span style="color:#171717">∎∎∎</span>
+- 100 `#f5f5f5` ![#f5f5f5](https://via.placeholder.com/15/f5f5f5/f5f5f5.png)
+- 500 `#a3a3a3` ![#a3a3a3](https://via.placeholder.com/15/a3a3a3/a3a3a3.png)
+- 700 `#404040` ![#404040](https://via.placeholder.com/15/404040/404040.png)
+- 900 `#171717` ![#171717](https://via.placeholder.com/15/171717/171717.png)
 
 **Teal**
 
-- 500 `#14b8a6` <span style="color:#14b8a6">∎∎∎</span>
-- 700 `#0f766e` <span style="color:#0f766e">∎∎∎</span>
+- 500 `#14b8a6` ![#14b8a6](https://via.placeholder.com/15/14b8a6/14b8a6.png)
+- 700 `#0f766e` ![#0f766e](https://via.placeholder.com/15/0f766e/0f766e.png)
 
 # Component
 
