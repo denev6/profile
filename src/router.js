@@ -14,6 +14,10 @@ const routes = [
     component: AboutView,
   },
   {
+    path: "/",
+    redirect: "/profile",
+  },
+  {
     path: "/project",
     name: "project",
     component: ProjectView,
