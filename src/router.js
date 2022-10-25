@@ -9,13 +9,9 @@ import PyautoguiView from "./components/view/PyautoguiView";
 
 const routes = [
   {
-    path: "/",
+    path: "/profile",
     name: "about",
     component: AboutView,
-  },
-  {
-    path: "/profile",
-    redirect: "/",
   },
   {
     path: "/project",

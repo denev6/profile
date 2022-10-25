@@ -5,11 +5,15 @@ const main = [
   },
   {
     text: "ML DL",
-    icons: ["scikitlearn", "pytorch", "tensorflow", "opencv"],
+    icons: ["scikitlearn", "pytorch", "tensorflow"],
   },
   {
     text: "DS",
     icons: ["numpy", "pandas"],
+  },
+  {
+    text: "Go",
+    icons: ["go"],
   },
   {
     text: "GitHub",
@@ -24,7 +28,7 @@ const main = [
     icons: ["linux"],
   },
   {
-    text: "MySQL",
+    text: "SQL",
     icons: ["mysql"],
   },
 ];

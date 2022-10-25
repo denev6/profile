@@ -5,7 +5,7 @@
       GitHub 코드 공개: <a href="https://github.com/Denev6/face-mouse-control" target="_blank">github.com/Denev6/face-mouse-control</a><br/>
     </p>
     <p>
-      논문 조회: <a href="" target="_blank">Coming soon</a>
+      논문 조회: <a href="https://doi.org/10.6109/jkiice.2022.26.9.1279" target="_blank">doi.org/10.6109/jkiice.2022.26.9.1279</a>
     </p>
     <img src="@/assets/pyautogui2.png" alt="논문 중 시연 장면"/>
     <h3>시작하게된 이유</h3>

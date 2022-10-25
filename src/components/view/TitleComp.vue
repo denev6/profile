@@ -49,7 +49,7 @@ export default {
   word-wrap: keep-all;
 }
 article > img {
-  max-width: 80%;
+  max-width: 90%;
   max-height: 40vh;
   margin: 2rem auto;
   display: block;

@@ -23,8 +23,8 @@
       블로그 형식의 글은 반복되는 단위의 디자인 많기 때문에 컴포넌트 단위로
       관리할 수 있는 Vue.js를 선택하였습니다. CSS는 Tailwindcss에서 제공하는
       색상 값이나 크기를 참고하였습니다. 처음에는 Post CSS 플러그인으로 사용하려 했으나 CSS가 많이
-      필요하지 않았기 떄문에 값만 참고하여 CSS3로 작업하였습니다. 아이콘은
-      Bootstrap Icons를 사용했고, 폰트는 구글 폰트를 통해 Noto Sans Kr을
+      필요하지 않았기 때문에 값만 참고하여 CSS3로 작업하였습니다. 아이콘은
+      Bootstrap Icons를 사용했고, 폰트는 구글 폰트를 통해 Noto Sans KR을
       사용하였습니다. Tech-Stack에 사용된 로고는 Simple Icons를 사용하였습니다. 
       <ul>
         <li>Vue.js<span>: MIT License</span></li>

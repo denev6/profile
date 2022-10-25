@@ -5,8 +5,8 @@
       TIL 블로그와 관련 없이 별도로 운영하는 블로그입니다. 처음 프로그래밍을
       독학하며 궁금했던 점들을 기록하였습니다.<br /><br />
       네이버 블로그:
-      <a href="https://blog.naver.com/music5038" target="_blank"
-        >blog.naver.com/music5038</a
+      <a href="https://blog.naver.com/denev-6" target="_blank"
+        >blog.naver.com/denev-6</a
       >
     </p>
     <img src="@/assets/naver1.png" alt="#프로그래밍" />
@@ -18,8 +18,8 @@
       일들을 바탕으로 프로그래밍 관련 정보를 쉽게 풀어냈습니다.
     </p>
     <p><br /># 인기글</p>
+    <img src="@/assets/naver3.png" alt="누적 조회수" />
     <img src="@/assets/naver2.png" alt="프로그래밍 시작하기" />
-    <img src="@/assets/naver3.png" alt="누적 조회수 1706회" />
   </article>
 </template>
 
