@@ -1,7 +1,7 @@
 <template>
   <body>
     <nav>
-      <router-link to="/" class="nav_item">About</router-link>
+      <router-link to="/profile" class="nav_item">About</router-link>
       <router-link to="/project" class="nav_item">Project</router-link>
     </nav>
 
@@ -17,7 +17,7 @@
       <div id="tool-box" v-show="isBottom == true">
         <router-link
           id="tool_router"
-          v-if="$route.fullPath == '/'"
+          v-if="$route.fullPath == '/profile'"
           to="/project"
           >다른 프로젝트 보기</router-link
         >
