@@ -63,14 +63,14 @@ article p ~ ul > li {
 }
 
 @media (max-width: 640px) {
+  
   #article_title {
     font-size: 1.4rem;
     margin: 0px 0.4rem 1rem 0.4rem;
   }
   article {
-    font-size: 0.8rem;
     font-weight: 300;
-    margin: 0px 0.2rem;
+    margin: 0px -0.8rem;
   }
 }
 </style>

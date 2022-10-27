@@ -65,7 +65,7 @@ html {
   max-width: 100vw;
 }
 body {
-  max-width: 600px;
+  max-width: 650px;
   margin: 0 auto;
   font-family: "Noto Sans KR", sans-serif;
   font-weight: 500;

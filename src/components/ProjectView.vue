@@ -62,7 +62,7 @@ export default {
 
 @media (max-width: 640px) {
   .project_card {
-    padding: 1rem 0.6rem;
+    padding: 0.8rem 1.4rem;
   }
   .project_card > h3 {
     font-size: 1rem;
