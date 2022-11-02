@@ -1,6 +1,6 @@
 <template>
   <div id="modal">
-    <img src="@/assets/pyautogui3.png" />
+    <img src="@/assets/pyautogui0.png" />
     <div id="close-tab">아무 곳이나 클릭해 닫기</div>
   </div>
 </template>

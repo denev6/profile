@@ -34,7 +34,6 @@ const aboutDetails = [
   {
     icon: "tech-stack",
     title: "Tech-Stack",
-    details: [{ sub: "Interested in..." }],
   },
 ];
 

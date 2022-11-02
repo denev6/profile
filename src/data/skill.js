@@ -11,9 +11,18 @@ const main = [
     text: "DS",
     icons: ["numpy", "pandas"],
   },
+  /*
+  {
+    text: "C/C++",
+    icons: ["cpp"],
+  }, */
   {
     text: "Go",
     icons: ["go"],
+  },
+  {
+    text: "SQL",
+    icons: ["postgresql"],
   },
   {
     text: "GitHub",
@@ -27,28 +36,16 @@ const main = [
     text: "Linux",
     icons: ["linux"],
   },
-  {
-    text: "SQL",
-    icons: ["mysql"],
-  },
 ];
 
 const sub = [
   {
-    text: "C",
-    icons: ["c"],
+    text: "Javascript",
+    icons: ["javascript"],
   },
   {
-    text: "Frontend",
-    icons: ["html5", "css3", "javascript"],
-  },
-  {
-    text: "Vue",
+    text: "Vue.js",
     icons: ["vuedotjs"],
-  },
-  {
-    text: "Tailwindcss",
-    icons: ["tailwindcss"],
   },
   {
     text: "Django",

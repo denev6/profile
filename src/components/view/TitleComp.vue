@@ -54,6 +54,9 @@ article > img {
   margin: 2rem auto;
   display: block;
 }
+article > img.img-shadow {
+  box-shadow: 0 10px 15px -3px rgb(0 0 0 / 0.1), 0 4px 6px -4px rgb(0 0 0 / 0.1);
+}
 article > h3 {
   margin-top: 5rem;
   color: #0f766e;
@@ -63,7 +66,6 @@ article p ~ ul > li {
 }
 
 @media (max-width: 640px) {
-  
   #article_title {
     font-size: 1.4rem;
     margin: 0px 0.4rem 1rem 0.4rem;

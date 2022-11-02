@@ -9,7 +9,7 @@
         >blog.naver.com/denev-6</a
       >
     </p>
-    <img src="@/assets/naver1.png" alt="#프로그래밍" />
+    <img class="img-shadow" src="@/assets/naver1.png" alt="#프로그래밍" />
     <h3>시작하게된 이유</h3>
     <p>
       모든분들이 그렇겠지만 저도 프로그래밍을 처음 시작할 때 많은 블로그와
@@ -18,8 +18,8 @@
       일들을 바탕으로 프로그래밍 관련 정보를 쉽게 풀어냈습니다.
     </p>
     <p><br /># 인기글</p>
-    <img src="@/assets/naver3.png" alt="누적 조회수" />
-    <img src="@/assets/naver2.png" alt="프로그래밍 시작하기" />
+    <img class="img-shadow" src="@/assets/naver3.png" alt="누적 조회수" />
+    <img class="img-shadow" src="@/assets/naver2.png" alt="프로그래밍 시작하기" />
   </article>
 </template>
 
