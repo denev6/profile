@@ -4,25 +4,16 @@ const main = [
     icons: ["python"],
   },
   {
-    text: "ML DL",
-    icons: ["scikitlearn", "pytorch", "tensorflow"],
+    text: "PyTorch",
+    icons: ["pytorch"],
   },
   {
-    text: "DS",
-    icons: ["numpy", "pandas"],
+    text: "OpenCV",
+    icons: ["opencv"],
   },
-  /*
-  {
-    text: "C/C++",
-    icons: ["cpp"],
-  }, */
   {
     text: "Go",
     icons: ["go"],
-  },
-  {
-    text: "SQL",
-    icons: ["postgresql"],
   },
   {
     text: "GitHub",
@@ -32,25 +23,21 @@ const main = [
     text: "Conda",
     icons: ["anaconda"],
   },
-  {
-    text: "Linux",
-    icons: ["linux"],
-  },
 ];
 
 const sub = [
   {
-    text: "Javascript",
-    icons: ["javascript"],
-  },
-  {
-    text: "Vue.js",
-    icons: ["vuedotjs"],
+    text: "Frontend",
+    icons: ["vuedotjs", "tailwindcss"],
   },
   {
     text: "Django",
-    icons: ["django"],
+    icons: ["django"]
   },
+  {
+    text: "SQL",
+    icons: ["postgresql"]
+  }
 ];
 
 export { main, sub };

@@ -4,6 +4,11 @@ export default {
     tags: ["Opencv", "Pyautogui", "Mediapipe", "Python"],
     path: "/pyautogui",
   },
+  transformer: {
+    title: "RoBERTa를 활용한 감정 분석",
+    tags: ["Transformers", "Pytorch", "Python", "NLP"],
+    path: "/transformer",
+  },
   pincette: {
     title: "이미지 크롤링 및 전처리 자동화",
     tags: ["Selenium", "Pillow", "Python"],
@@ -13,10 +18,5 @@ export default {
     title: "소개 페이지 (현재)",
     tags: ["Vue.js", "Tailwindcss", "HTML5", "CSS3"],
     path: "/vue-page",
-  },
-  naverBlog: {
-    title: "프로그래밍 지식 공유",
-    tags: ["Naver-Blog"],
-    path: "/naver-blog",
   },
 };

@@ -33,7 +33,7 @@ const aboutDetails = [
   },
   {
     icon: "tech-stack",
-    title: "Tech-Stack",
+    title: "Stack",
   },
 ];
 

@@ -1,6 +1,7 @@
 <template>
   <body>
-    <nav>
+    <nav @click="displayNav()">
+      <img id="nav-icon" src="@/icons/nav-arrow.svg" />
       <router-link to="/profile" class="nav_item">About</router-link>
       <router-link to="/project" class="nav_item">Project</router-link>
     </nav>
@@ -31,14 +32,34 @@
 </template>
 
 <script>
+let timerId;
+function throttling(func, timeout) {
+  if (timerId) {
+    return;
+  }
+  timerId = setTimeout(() => {
+    func();
+    timerId = undefined;
+  }, timeout);
+}
+
 export default {
   data() {
     return {
       isBottom: false,
+      toggleDown: false,
+      navArrowDeg: 0,
     };
   },
   mounted() {
-    document.addEventListener("scroll", this.showToolBox);
+    this.initNavByWindow();
+    // Event Listeners
+    document.addEventListener("scroll", () => {
+      throttling(this.showToolBox, 100);
+    });
+    window.addEventListener("resize", () => {
+      throttling(this.initNavByWindow, 400);
+    });
   },
   methods: {
     scrollUp() {
@@ -53,6 +74,46 @@ export default {
       } else {
         this.isBottom = false;
       }
+    },
+    isMobile() {
+      if (window.innerWidth > 640) {
+        return false;
+      } else {
+        return true;
+      }
+    },
+    displayNav() {
+      if (this.isMobile()) {
+        if (this.toggleDown) {
+          this.toggleDown = false;
+          this._setNavRouterDisplay("none");
+        } else {
+          this.toggleDown = true;
+          this._setNavRouterDisplay("block");
+        }
+        this.navArrowDeg += 180;
+        this._rotateNavIcon(this.navArrowDeg);
+      }
+    },
+    initNavByWindow() {
+      if (this.isMobile()) {
+        this.toggleDown = false;
+        this.navArrowDeg = 0;
+        this._setNavRouterDisplay("none");
+        this._rotateNavIcon(this.navArrowDeg);
+      } else {
+        this._setNavRouterDisplay("block");
+      }
+    },
+    _setNavRouterDisplay(display) {
+      let navRouters = document.getElementsByClassName("nav_item");
+      for (let i = 0; i < navRouters.length; i++) {
+        navRouters[i].style.display = display;
+      }
+    },
+    _rotateNavIcon(deg) {
+      let navIcon = document.getElementById("nav-icon");
+      navIcon.style.transform = "rotateX(" + deg + "deg) scaleX(-1)";
     },
   },
 };
@@ -86,6 +147,9 @@ nav {
   justify-content: flex-end;
   z-index: 99;
 }
+nav > #nav-icon {
+  display: none;
+}
 nav > .nav_item {
   color: #404040;
   font-style: normal;
@@ -116,7 +180,6 @@ nav > .nav_item::after {
   padding: 1rem;
   cursor: pointer;
 }
-
 /* Page transition */
 .fade_fast-enter-from {
   opacity: 0;
@@ -124,7 +187,6 @@ nav > .nav_item::after {
 .fade_fast-enter-active {
   transition: opacity 0.4s ease-out;
 }
-
 /* tool-box animation */
 .fade_slow-enter-from,
 .fade_slow-leave-to {
@@ -134,36 +196,46 @@ nav > .nav_item::after {
 .fade_slow-enter-active {
   transition: opacity 1s ease;
 }
-
 footer {
   padding: 4rem;
 }
-
 @media (max-width: 640px) {
   body {
     width: 90%;
     margin-top: 6rem;
-    
+
     /* iOS - safe area */
     padding-left: constant(safe-area-inset-left);
     padding-right: constant(safe-area-inset-right);
     padding-left: env(safe-area-inset-left);
     padding-right: env(safe-area-inset-right);
   }
+  nav > #nav-icon {
+    display: block;
+  }
+  nav > .nav_item::after {
+    display: none;
+  }
   nav {
     position: fixed;
-    left: 0;
+    right: 0;
     top: 0;
     width: 100%;
-    height: 3.4rem;
-    font-size: 0.8rem;
-    justify-content: space-evenly;
+    height: min-content;
+    padding: 1.2rem 2.4rem;
+    flex-direction: column;
     align-items: flex-end;
-    padding-bottom: 0.5rem;
-    background-color: #171717;
+    gap: 1.2;
+    background: linear-gradient(#ffffff, #ffffffcc);
+    box-shadow: 0 1px 3px 0 rgb(0 0 0 / 0.1), 0 1px 2px -1px rgb(0 0 0 / 0.1);
+    transform: none;
   }
-  nav > .nav_item {
-    color: #f5f5f5;
+  #nav-icon {
+    width: 1.2rem;
+  }
+  .nav_item {
+    font-size: 1.2rem;
+    font-weight: 500;
   }
   #tool-box {
     display: none;

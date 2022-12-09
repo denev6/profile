@@ -34,7 +34,6 @@ export default {
   border-radius: 5px;
   font-size: 0.8rem;
   cursor: default;
-  letter-spacing: 0.08rem;
 }
 .skill_img {
   display: inline-block;

@@ -62,7 +62,16 @@ article > h3 {
   color: #0f766e;
 }
 article p ~ ul > li {
-  line-height: 1.6rem;
+  line-height: 2rem;
+}
+article a {
+  color: #000;
+  text-decoration: underline;
+  font-style: normal;
+}
+article p ~ ul > li > span {
+  font-weight: 300;
+  color: #a3a3a3;
 }
 
 @media (max-width: 640px) {
@@ -71,7 +80,7 @@ article p ~ ul > li {
     margin: 0px 0.4rem 1rem 0.4rem;
   }
   article {
-    font-weight: 300;
+    font-weight: 500;
     margin: 0px -0.8rem;
   }
 }

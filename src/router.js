@@ -2,10 +2,10 @@ import { createWebHistory, createRouter } from "vue-router";
 import AboutView from "./components/AboutView";
 import ProjectView from "./components/ProjectView";
 import NotFoundView from "./components/NotFoundView";
-import NaverView from "./components/view/NaverView";
 import PincetteView from "./components/view/PincetteView";
 import ProfileView from "./components/view/ProfileView";
 import PyautoguiView from "./components/view/PyautoguiView";
+import TransformerView from "./components/view/TransformerView";
 
 const routes = [
   {
@@ -23,11 +23,6 @@ const routes = [
     component: ProjectView,
   },
   {
-    path: "/naver-blog",
-    name: "naver-blog",
-    component: NaverView,
-  },
-  {
     path: "/pincette",
     name: "pincette",
     component: PincetteView,
@@ -41,6 +36,11 @@ const routes = [
     path: "/pyautogui",
     name: "pyautogui",
     component: PyautoguiView,
+  },
+  {
+    path: "/transformer",
+    name: "transformer",
+    component: TransformerView,
   },
   {
     path: "/404",
