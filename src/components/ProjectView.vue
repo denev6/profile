@@ -57,7 +57,7 @@ export default {
   font-weight: 300;
   font-size: 0.8rem;
   font-style: italic;
-  opacity: 0.6;
+  opacity: 0.7;
 }
 
 @media (max-width: 640px) {
@@ -65,13 +65,15 @@ export default {
     padding: 0.8rem 1.4rem;
   }
   .project_card > h3 {
-    font-size: 1rem;
+    font-size: 1.2rem;
     font-weight: 500;
     margin-bottom: 0.6rem;
   }
   .project_tags {
-    font-size: 0.8rem;
     padding: 0.2rem 0.4rem;
+    letter-spacing: 0.04rem;
+    font-weight: 300;
+    font-style: normal;
   }
 }
 </style>

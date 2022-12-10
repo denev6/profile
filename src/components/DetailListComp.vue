@@ -7,8 +7,8 @@
       <p v-for="(detail, i) in details" :key="i">
         <span class="detail_sub-content">{{ detail.sub }}</span>
         <span>{{ detail.main }}</span>
-        <a v-if="detail.href != undifined" :href="detail.href" target="_blank"
-          >: {{ detail.href }}</a
+        <a v-if="detail.href != undefined" :href="detail.href" target="_blank"
+          >{{ detail.aText }}</a
         >
       </p>
     </div>

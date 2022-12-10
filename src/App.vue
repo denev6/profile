@@ -213,9 +213,6 @@ footer {
   nav > #nav-icon {
     display: block;
   }
-  nav > .nav_item::after {
-    display: none;
-  }
   nav {
     position: fixed;
     right: 0;
