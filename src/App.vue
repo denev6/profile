@@ -8,7 +8,7 @@
 
     <router-view v-slot="{ Component, route }">
       <transition name="fade_fast" mode="out-in" appear>
-        <div :key="route.name">
+        <div :key="route.name" id="main-body">
           <component :is="Component"></component>
         </div>
       </transition>
@@ -33,7 +33,7 @@
 
 <script>
 let timerId;
-function throttling(func, timeout) {
+function throttling(func, timeout = 100) {
   if (timerId) {
     return;
   }
@@ -55,11 +55,19 @@ export default {
     this.initNavByWindow();
     // Event Listeners
     document.addEventListener("scroll", () => {
-      throttling(this.showToolBox, 100);
+      throttling(this.showToolBox);
     });
     window.addEventListener("resize", () => {
-      throttling(this.initNavByWindow, 400);
+      throttling(this.initNavByWindow, 500);
     });
+    if (this.isMobile()) {
+      const notNav = document.getElementById("main-body");
+      notNav.addEventListener("touchstart", () => {
+        if (this.toggleDown) {
+          this.displayNav();
+        }
+      });
+    }
   },
   methods: {
     scrollUp() {
@@ -113,7 +121,7 @@ export default {
     },
     _rotateNavIcon(deg) {
       let navIcon = document.getElementById("nav-icon");
-      navIcon.style.transform = "rotateX(" + deg + "deg) scaleX(-1)";
+      navIcon.style.transform = `rotateX(${deg}deg) scaleX(-1)`;
     },
   },
 };
@@ -223,7 +231,7 @@ footer {
     flex-direction: column;
     align-items: flex-end;
     gap: 1.2;
-    background: linear-gradient(#ffffff, #ffffffcc);
+    background: linear-gradient(#ffffff, #fffffff0);
     box-shadow: 0 1px 3px 0 rgb(0 0 0 / 0.1), 0 1px 2px -1px rgb(0 0 0 / 0.1);
     transform: none;
   }

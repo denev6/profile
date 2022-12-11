@@ -82,6 +82,7 @@ article p ~ ul > li > span {
   article {
     font-weight: 500;
     margin: 0px -0.8rem;
+    word-break: break-all;
   }
 }
 </style>

@@ -37,6 +37,12 @@
       </ul>
     </p>
     <img src="@/assets/pyautogui2.png" alt="전체 구조"/>
+    <h3>기록</h3>
+    <p>
+      <ul>
+        <li><a href="https://denev6.tistory.com/entry/face-mouse-control" target="_blank">프로젝트에 대한 생각</a></li>
+      </ul>
+    </p>
   </article>
   <ModalView
     v-if="modalState == true"

@@ -39,4 +39,10 @@
     opacity: 0.6;
   }
 }
+@media (max-width: 640px) {
+  #modal > img {
+    max-width: 90%;
+    max-height: 100%;
+  }
+}
 </style>

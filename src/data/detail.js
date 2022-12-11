@@ -7,10 +7,6 @@ const aboutDetails = [
         sub: "2022",
         main: "얼굴 인식과 Pyautogui 마우스 제어 기반의 비접촉식 입력 기법",
       },
-      {
-        sub: "2022",
-        main: "진행 중...",
-      },
     ],
   },
   {
@@ -51,7 +47,7 @@ const aboutDetails = [
   {
     icon: "project",
     title: "Project",
-    details: [{ sub: "자세한 내용은 Project 페이지 참고", main: "" }],
+    details: [{ sub: "자세한 내용은 상단의 Project 페이지 참고", main: "" }],
   },
   {
     icon: "tech-stack",

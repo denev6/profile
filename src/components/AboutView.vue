@@ -83,10 +83,10 @@ hr {
     font-size: 0.8rem;
   }
   .stack_sub {
-    opacity: 0.5;
+    opacity: 0.2;
   }
   .stack_sub:hover {
-    opacity: 0.5;
+    opacity: inherit;
   }
 }
 </style>
