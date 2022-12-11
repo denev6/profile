@@ -52,7 +52,7 @@
           </tbody>
       </table>
       <a class="article_colab-link"
-          href="https://github.com/Denev6/practice/blob/main/transformer/data_processing.ipynb" target="_blank">
+          href="https://colab.research.google.com/github/Denev6/practice/blob/main/transformer/data_processing.ipynb" target="_blank">
           <img src="https://colab.research.google.com/assets/colab-badge.svg" alt="Open In Colab" />
       </a>
       </p>
