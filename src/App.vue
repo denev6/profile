@@ -16,12 +16,6 @@
 
     <transition name="fade_slow">
       <div id="tool-box" v-show="isBottom == true">
-        <router-link
-          id="tool_router"
-          v-if="$route.fullPath == '/profile'"
-          to="/project"
-          >다른 프로젝트 보기</router-link
-        >
         <img id="tool_move-top" src="@/icons/arrow-up.svg" @click="scrollUp" />
       </div>
     </transition>
@@ -32,15 +26,15 @@
 </template>
 
 <script>
-let timerId;
-function throttling(func, timeout = 100) {
-  if (timerId) {
+let timer;
+function throttling(func, ms) {
+  if (timer) {
     return;
   }
-  timerId = setTimeout(() => {
+  timer = setTimeout(() => {
     func();
-    timerId = undefined;
-  }, timeout);
+    timer = undefined;
+  }, ms);
 }
 
 export default {
@@ -55,11 +49,12 @@ export default {
     this.initNavByWindow();
     // Event Listeners
     document.addEventListener("scroll", () => {
-      throttling(this.showToolBox);
+      throttling(this.showToolBox, 50);
     });
     window.addEventListener("resize", () => {
       throttling(this.initNavByWindow, 500);
     });
+    /** Not sure which event-type to use.
     if (this.isMobile()) {
       const notNav = document.getElementById("main-body");
       notNav.addEventListener("touchstart", () => {
@@ -68,6 +63,7 @@ export default {
         }
       });
     }
+    */
   },
   methods: {
     scrollUp() {
@@ -138,6 +134,7 @@ body {
   margin: 0 auto;
   font-family: "Noto Sans KR", sans-serif;
   font-weight: 500;
+  margin-top: 8rem;
 }
 a {
   color: #a3a3a3;
@@ -146,13 +143,19 @@ a {
   font-weight: 300;
 }
 nav {
+  position: fixed;
+  right: 0;
+  top: 0;
   width: 100%;
-  height: 7rem;
+  height: 4.6rem;
   display: flex;
   flex-direction: row;
-  gap: 1.4rem;
   align-items: center;
   justify-content: flex-end;
+  gap: 1.8rem;
+  padding-right: 4rem;
+  background: linear-gradient(#ffffff, #fffffff0);
+  box-shadow: 0 1px 3px 0 rgb(0 0 0 / 0.1), 0 1px 2px -1px rgb(0 0 0 / 0.1);
   z-index: 99;
 }
 nav > #nav-icon {
@@ -160,14 +163,8 @@ nav > #nav-icon {
 }
 nav > .nav_item {
   color: #404040;
+  font-weight: 500;
   font-style: normal;
-}
-nav > .nav_item::after {
-  content: "";
-  display: block;
-  margin: 0.4rem auto;
-  width: 70%;
-  border-top: 1px solid #a3a3a377;
 }
 #tool-box {
   position: fixed;
@@ -176,11 +173,6 @@ nav > .nav_item::after {
   align-items: center;
   bottom: 3rem;
   right: 3rem;
-}
-#tool_router {
-  font-size: 0.8rem;
-  font-style: normal;
-  color: #404040;
 }
 #tool_move-top {
   width: 1.4rem;
@@ -222,18 +214,12 @@ footer {
     display: block;
   }
   nav {
-    position: fixed;
-    right: 0;
-    top: 0;
-    width: 100%;
+    cursor: pointer;
     height: min-content;
     padding: 1.2rem 2.4rem;
     flex-direction: column;
     align-items: flex-end;
-    gap: 1.2;
-    background: linear-gradient(#ffffff, #fffffff0);
-    box-shadow: 0 1px 3px 0 rgb(0 0 0 / 0.1), 0 1px 2px -1px rgb(0 0 0 / 0.1);
-    transform: none;
+    gap: 1.2rem;
   }
   #nav-icon {
     width: 1.2rem;
