@@ -59,8 +59,9 @@
       <h3>모델 정보</h3>
       <p>
       <ul>
-          <li>Accuracy: 0.79379</li>
-          <li>Batch Size: 16*16</li>
+          <li>Accuracy: 0.80280</li>
+          <li>F1-macro: 0.69021</li>
+          <li>Batch Size: 32*8</li>
           <li>Optimizer: AdamW</li>
           <li>Model: <a href="https://github.com/tae898/erc" target="_blank">Emoberta-large (tae898)</a></li>
       </ul>
