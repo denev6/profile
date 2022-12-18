@@ -39,6 +39,8 @@ export default {
   display: inline-block;
   width: 1rem;
   margin-right: 0.4rem;
+  color: transparent;
+  text-shadow: 0 0 0 #000000;
 }
 
 @media (max-width: 640px) {

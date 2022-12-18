@@ -8,13 +8,32 @@ const main = [
     icons: ["pytorch"],
   },
   {
+    text: "Scikit-learn",
+    icons: ["scikitlearn"],
+  },
+  {
+    text: "Numpy",
+    icons: ["numpy"],
+  },
+  {
+    text: "Pandas",
+    icons: ["pandas"],
+  },
+  {
     text: "OpenCV",
     icons: ["opencv"],
+  },
+  {
+    text: "Transformers",
+    icons: ["huggingface"],
   },
   {
     text: "Go",
     icons: ["go"],
   },
+];
+
+const sub = [
   {
     text: "GitHub",
     icons: ["github"],
@@ -23,21 +42,10 @@ const main = [
     text: "Conda",
     icons: ["anaconda"],
   },
-];
-
-const sub = [
   {
-    text: "Frontend",
-    icons: ["vuedotjs", "tailwindcss"],
+    text: "Javascript",
+    icons: ["javascript"],
   },
-  {
-    text: "Django",
-    icons: ["django"]
-  },
-  {
-    text: "SQL",
-    icons: ["postgresql"]
-  }
 ];
 
 export { main, sub };

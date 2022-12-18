@@ -9,11 +9,11 @@
     <h3>제작 기술</h3>
     <p>
       <ul>
-        <li>Vue.js<span>: MIT License</span></li>
-        <li>Tailwindcss<span>: MIT License</span></li>
-        <li>Bootstrap Icons<span>: MIT License</span></li>
-        <li>Noto Sans KR<span>: OFL</span></li>
-        <li>Simple Icons<span>: CC0 1.0 Universal</span></li>
+        <li>Vue.js: <span>MIT License</span></li>
+        <li>Tailwindcss: <span>MIT License</span></li>
+        <li>Bootstrap Icons: <span>MIT License</span></li>
+        <li>Noto Sans KR: <span>OFL</span></li>
+        <li>Simple Icons: <span>CC0 1.0 Universal</span></li>
       </ul>
     </p>
     <h3>프로젝트 기록</h3>

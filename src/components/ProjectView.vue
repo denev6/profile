@@ -1,14 +1,16 @@
 <template>
   <div
-    class="project_card"
     v-for="(project, i) in projects"
     :key="i"
     @click="routeToPath(project.path)"
   >
-    <h3>{{ project.title }}</h3>
-    <div class="project_tags" v-for="(tag, j) in project.tags" :key="j">
-      {{ tag }}
+    <div class="project_card">
+      <h3>{{ project.title }}</h3>
+      <div class="project_tags" v-for="(tag, j) in project.tags" :key="j">
+        {{ tag }}
+      </div>
     </div>
+    <hr class="project_card_hr" />
   </div>
 </template>
 
@@ -31,16 +33,20 @@ export default {
 
 <style>
 .project_card {
-  margin-bottom: 2rem;
-  padding: 2.4rem 2rem;
+  padding: 3.6rem 2rem;
+  font-size: 1.2rem;
   border-radius: 5px;
   cursor: pointer;
-  font-size: 1.2rem;
-  box-shadow: 0 4px 6px -1px rgb(0 0 0 / 0.1), 0 2px 4px -2px rgb(0 0 0 / 0.1);
 }
 .project_card:hover {
   box-shadow: 0 20px 25px -5px rgb(0 0 0 / 0.1),
     0 8px 10px -6px rgb(0 0 0 / 0.1);
+}
+.project_card_hr {
+  margin-top: 0px;
+  width: 90%;
+  border: none;
+  border-top: 1px solid #a3a3a3;
 }
 .project_card > h3 {
   margin-bottom: 1.6rem;
@@ -62,18 +68,23 @@ export default {
 
 @media (max-width: 640px) {
   .project_card {
-    padding: 0.8rem 1.4rem;
+    padding: 2.4rem 1.4rem;
   }
   .project_card > h3 {
     font-size: 1.2rem;
-    font-weight: 500;
-    margin-bottom: 0.6rem;
+    font-weight: 700;
+    margin-bottom: 1.2rem;
   }
   .project_tags {
+    margin: 0.1rem;
     padding: 0.2rem 0.4rem;
     letter-spacing: 0.04rem;
     font-weight: 300;
+    font-size: 0.75rem;
     font-style: normal;
+  }
+  .project_card:hover {
+    box-shadow: none;
   }
 }
 </style>

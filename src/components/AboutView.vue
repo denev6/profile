@@ -2,7 +2,7 @@
 
   <h1 id="ko-name">박성진</h1>
   <span id="en-name">Sung-jin Park</span>
-  <hr />
+  <hr id="name_hr"/>
 
   <div v-for="(about, i) in aboutDetails" :key="i">
     <DetailListComp
@@ -57,8 +57,9 @@ export default {
 #en-name {
   margin-left: 0.4rem;
 }
-hr {
-  color: #404040;
+#name_hr {
+  border: none;
+  border-bottom: 1px solid #404040;
   margin-top: 2rem;
 }
 .stack_wrapper {

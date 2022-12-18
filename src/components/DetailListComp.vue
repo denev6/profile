@@ -5,9 +5,12 @@
 
     <div class="detail_content">
       <p v-for="(detail, i) in details" :key="i">
-        <span class="detail_sub-content">{{ detail.sub }}</span>
-        <span>{{ detail.main }}</span>
-        <a v-if="detail.href != undefined" :href="detail.href" target="_blank"
+        <span class="detail_sub-content">{{ detail.sub }}</span
+        ><span>{{ detail.main }}</span>
+        <a
+          v-if="detail.href != undefined"
+          :href="detail.href"
+          target="_blank"
           >{{ detail.aText }}</a
         >
       </p>
@@ -57,6 +60,5 @@ a:hover {
 }
 .detail_sub-content {
   color: #a3a3a3;
-  margin-right: 0.6rem;
 }
 </style>

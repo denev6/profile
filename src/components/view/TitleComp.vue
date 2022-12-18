@@ -35,9 +35,10 @@ export default {
   letter-spacing: 0.04rem;
 }
 #article_hr {
-  color: #f5f5f5;
-  opacity: 0.3;
   margin: 3rem auto;
+  border: none;
+  opacity: 0.5;
+  border-bottom: 1px solid #a3a3a3;
 }
 
 /* CSS for sub-Pages in '@/components/view/~View'

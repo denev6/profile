@@ -6,7 +6,7 @@ export default {
   },
   transformer: {
     title: "RoBERTa를 활용한 감정 분석",
-    tags: ["Transformers", "Pytorch", "Python", "NLP"],
+    tags: ["Transformers", "Pytorch", "NLP", "Python"],
     path: "/transformer",
   },
   pincette: {
@@ -15,7 +15,7 @@ export default {
     path: "/pincette",
   },
   profile: {
-    title: "소개 페이지 (현재)",
+    title: "프로필 페이지 (현재)",
     tags: ["Vue.js", "Tailwindcss", "HTML5", "CSS3"],
     path: "/vue-page",
   },

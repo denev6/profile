@@ -129,6 +129,9 @@ html {
   margin: 0px;
   max-width: 100vw;
 }
+::selection {
+  background-color: #14b8a640;
+}
 body {
   max-width: 650px;
   margin: 0 auto;
