@@ -20,6 +20,25 @@
             <li>Transformers & PyTorch 활용</li>
         </ul>
         </p>
+        <h3>DACON 모델 정보</h3>
+        <p>
+        <ul>
+            <li>코드 공유: <a href="https://dacon.io/competitions/official/236027/codeshare/7275" target="_blank">
+                dacon.io/codeshare
+                </a></li>
+            <li>결과: 최종 2위 수상</li>
+            <li>Private Score: 0.56172</li>
+            <li>Optimizer: AdamW</li>
+            <li>Model: <a href="https://github.com/tae898/erc" target="_blank">Emoberta-large (tae898)</a></li>
+        </ul>
+        </p>
+        <h3>기록</h3>
+        <p>
+        <ul>
+            <li><a href="https://denev6.tistory.com/entry/transformers-emo-classify" target="_blank">프로젝트 전체 기록</a></li>
+            <li><a href="https://denev6.tistory.com/entry/EmoBERTa" target="_blank">BASE 모델 학습 과정</a></li>
+        </ul>
+        </p>
         <h3>데이터 정보</h3>
         <p>
         <table>
@@ -51,42 +70,6 @@
                 </tr>
             </tbody>
         </table>
-        <a class="article_colab-link"
-            href="https://colab.research.google.com/github/Denev6/practice/blob/main/transformer/data_processing.ipynb"
-            target="_blank">
-            <img src="https://colab.research.google.com/assets/colab-badge.svg" alt="Open In Colab" />
-        </a>
-        </p>
-        <h3>DACON 모델 정보</h3>
-        <p>
-        <ul>
-            <li>코드 공유: <a href="https://dacon.io/competitions/official/236027/codeshare/7275" target="_blank">
-                dacon.io/codeshare
-                </a></li>
-            <li>Private Score: 0.56172</li>
-            <li>결과: 수상 예정<span> (4위)</span></li>
-        </ul>
-        </p>
-        <h3>Github 모델 정보</h3>
-        <p>
-        <ul>
-            <li>Accuracy: 0.80280</li>
-            <li>F1-macro: 0.69021</li>
-            <li>Optimizer: AdamW</li>
-            <li>Model: <a href="https://github.com/tae898/erc" target="_blank">Emoberta-large (tae898)</a></li>
-        </ul>
-        <a class="article_colab-link"
-            href="https://colab.research.google.com/github/Denev6/practice/blob/main/transformer/RoBERTa_pytorch.ipynb"
-            target="_blank">
-            <img src="https://colab.research.google.com/assets/colab-badge.svg" alt="Open In Colab" />
-        </a>
-        </p>
-        <h3>기록</h3>
-        <p>
-        <ul>
-            <li><a href="https://denev6.tistory.com/entry/transformers-emo-classify" target="_blank">프로젝트 전체 기록</a></li>
-            <li><a href="https://denev6.tistory.com/entry/EmoBERTa" target="_blank">BASE 모델 학습 과정</a></li>
-        </ul>
         </p>
     </article>
 </template>

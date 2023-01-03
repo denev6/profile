@@ -1,9 +1,27 @@
 <template>
-
   <h1 id="ko-name">박성진</h1>
   <span id="en-name">Sung-jin Park</span>
-  <hr id="name_hr"/>
+  <hr id="name_hr" />
 
+  <!-- Project details -->
+  <div class="detail">
+    <img :src="getIconSrc('project')" />
+    <h3>Project</h3>
+    <div class="detail_content">
+      <p id="detail_project_content">
+        <span class="detail_sub-content"
+          >자세한 내용은
+          <span class="detail_router" @click="routeToPath('/project')"
+            >Project</span
+          > 참고</span
+        >
+        <br />실시간 얼굴 인식 기반의 마우스 제어
+        <br />RoBERTa를 활용한 다중 감정 분석
+      </p>
+    </div>
+  </div>
+
+  <!-- Details from detail.js -->
   <div v-for="(about, i) in aboutDetails" :key="i">
     <DetailListComp
       :icon="about.icon"
@@ -12,6 +30,11 @@
     ></DetailListComp>
   </div>
 
+  <!-- Skill block -->
+  <div class="detail">
+    <img :src="getIconSrc('tech-stack')" />
+    <h3>Stack</h3>
+  </div>
   <span class="stack_wrapper">
     <SkillBlock
       v-for="(skill, i) in mainSkill"
@@ -27,7 +50,6 @@
       :icons="skill.icons"
     ></SkillBlock>
   </span>
-
 </template>
 
 <script>
@@ -45,6 +67,14 @@ export default {
     };
   },
   components: { DetailListComp, SkillBlock },
+  methods: {
+    getIconSrc(name) {
+      return require(`@/icons/${name}.svg`);
+    },
+    routeToPath(path) {
+      this.$router.push(path);
+    },
+  },
 };
 </script>
 
@@ -74,6 +104,38 @@ export default {
 }
 .stack_sub:hover {
   opacity: 0.7;
+}
+/* DetailListComp */
+.detail > img {
+  color: #0f766e;
+  margin-right: 0.4rem;
+}
+.detail > h3 {
+  color: #0f766e;
+  display: inline-block;
+  margin-bottom: 0px;
+}
+a:hover {
+  color: #14b8a6;
+}
+.detail {
+  margin-top: 3rem;
+}
+.detail_content {
+  margin-left: 1.4rem;
+}
+.detail_sub-content {
+  color: #a3a3a3;
+}
+.detail_router {
+  text-decoration: underline;
+  cursor: pointer;
+}
+.detail_router:hover {
+  color: #0f766e;
+}
+#detail_project_content {
+  line-height: 2rem;
 }
 
 @media (max-width: 640px) {

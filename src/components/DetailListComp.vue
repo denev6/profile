@@ -39,26 +39,3 @@ export default {
 };
 </script>
 
-<style>
-.detail > img {
-  color: #0f766e;
-  margin-right: 0.4rem;
-}
-.detail > h3 {
-  color: #0f766e;
-  display: inline-block;
-  margin-bottom: 0px;
-}
-a:hover {
-  color: #14b8a6;
-}
-.detail {
-  margin-top: 3rem;
-}
-.detail_content {
-  margin-left: 1.4rem;
-}
-.detail_sub-content {
-  color: #a3a3a3;
-}
-</style>

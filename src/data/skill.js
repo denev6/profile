@@ -12,10 +12,6 @@ const main = [
     icons: ["scikitlearn"],
   },
   {
-    text: "Numpy",
-    icons: ["numpy"],
-  },
-  {
     text: "Pandas",
     icons: ["pandas"],
   },
@@ -23,17 +19,13 @@ const main = [
     text: "OpenCV",
     icons: ["opencv"],
   },
+];
+
+const sub = [
   {
     text: "Transformers",
     icons: ["huggingface"],
   },
-  {
-    text: "Go",
-    icons: ["go"],
-  },
-];
-
-const sub = [
   {
     text: "GitHub",
     icons: ["github"],
@@ -43,8 +35,8 @@ const sub = [
     icons: ["anaconda"],
   },
   {
-    text: "Javascript",
-    icons: ["javascript"],
+    text: "C/C++",
+    icons: ["cpp"],
   },
 ];
 
