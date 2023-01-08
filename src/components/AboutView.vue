@@ -4,24 +4,26 @@
   <hr id="name_hr" />
 
   <!-- Project details -->
-  <div class="detail">
-    <img :src="getIconSrc('project')" />
-    <h3>Project</h3>
-    <div class="detail_content">
-      <p id="detail_project_content">
-        <span class="detail_sub-content"
-          >자세한 내용은
-          <span class="detail_router" @click="routeToPath('/project')"
-            >Project</span
-          > 참고</span
-        >
-        <br />실시간 얼굴 인식 기반의 마우스 제어
-        <br />RoBERTa를 활용한 다중 감정 분석
-      </p>
-    </div>
+  <div class="detail_router-wrapper">
+    <span class="detail_router" @click="routeToPath('/project')">
+      <img :src="getIconSrc('project')" />
+      <span>Project</span>
+    </span>
+    <a
+      class="detail_router"
+      target="_blank"
+      href="https://denev6.tistory.com/category"
+    >
+      <img :src="getIconSrc('tistory')" />
+      <span>Blog</span>
+    </a>
+    <a class="detail_router" target="_blank" href="https://github.com/Denev6">
+      <img :src="getIconSrc('github')" />
+      <span>Github</span>
+    </a>
   </div>
 
-  <!-- Details from detail.js -->
+  <!-- Details from detail.js
   <div v-for="(about, i) in aboutDetails" :key="i">
     <DetailListComp
       :icon="about.icon"
@@ -29,6 +31,7 @@
       :details="about.details"
     ></DetailListComp>
   </div>
+   -->
 
   <!-- Skill block -->
   <div class="detail">
@@ -53,7 +56,7 @@
 </template>
 
 <script>
-import DetailListComp from "./DetailListComp";
+// import DetailListComp from "./DetailListComp";
 import SkillBlock from "./SkillBlockComp";
 import aboutDetails from "@/data/detail";
 import { main, sub } from "@/data/skill";
@@ -66,7 +69,7 @@ export default {
       aboutDetails: aboutDetails,
     };
   },
-  components: { DetailListComp, SkillBlock },
+  components: { SkillBlock },
   methods: {
     getIconSrc(name) {
       return require(`@/icons/${name}.svg`);
@@ -79,6 +82,9 @@ export default {
 </script>
 
 <style>
+a:hover {
+  color: #14b8a6;
+}
 #ko-name {
   margin-bottom: 0px;
   font-size: 3rem;
@@ -106,36 +112,55 @@ export default {
   opacity: 0.7;
 }
 /* DetailListComp */
-.detail > img {
-  color: #0f766e;
-  margin-right: 0.4rem;
+.detail {
+  margin-top: 3rem;
 }
 .detail > h3 {
   color: #0f766e;
   display: inline-block;
   margin-bottom: 0px;
 }
-a:hover {
-  color: #14b8a6;
+.detail > img {
+  margin-right: 0.8rem;
+  width: 1em;
+  height: 1em;
 }
-.detail {
-  margin-top: 3rem;
-}
-.detail_content {
-  margin-left: 1.4rem;
-}
-.detail_sub-content {
-  color: #a3a3a3;
+.detail_router-wrapper {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content:space-around;
+  align-items: center;
+  flex-wrap: wrap;
+  padding-top: 3rem;
+  padding-bottom: 3rem;
+  border-bottom: 1px solid #d4d4d4;
 }
 .detail_router {
-  text-decoration: underline;
+  width: 5rem;
+  height: 5rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+  padding: 2rem;
   cursor: pointer;
+  border-radius: 2rem;
 }
-.detail_router:hover {
+.detail_router:hover{
+  background-color: #f5f5f540;
+  box-shadow: 0 1px 2px 0 rgb(0 0 0 / 0.05);
+}
+.detail_router > img {
+  width: 2.4rem;
+  height: 2.4rem;
+  opacity: 0.8;
+}
+.detail_router > span {
   color: #0f766e;
-}
-#detail_project_content {
-  line-height: 2rem;
+  font-style: normal;
+  font-size: 1rem;
+  font-weight: 700;
 }
 
 @media (max-width: 640px) {
@@ -144,6 +169,13 @@ a:hover {
   }
   #en-name {
     font-size: 0.8rem;
+  }
+  .detail_router-wrapper {
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+  }
+  .detail_router {
+    padding: 1.2rem;
   }
   .stack_sub {
     opacity: 0.2;

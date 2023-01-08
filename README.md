@@ -14,6 +14,7 @@ From ['_Tailwindcss-Color_'](https://tailwindcss.com/docs/customizing-colors)
 **Neutral**
 
 - 100 `#f5f5f5` ![#f5f5f5](https://via.placeholder.com/15/f5f5f5/f5f5f5.png)
+- 300 `#d4d4d4` ![#d4d4d4](https://via.placeholder.com/15/d4d4d4/d4d4d4.png)
 - 500 `#a3a3a3` ![#a3a3a3](https://via.placeholder.com/15/a3a3a3/a3a3a3.png)
 - 700 `#404040` ![#404040](https://via.placeholder.com/15/404040/404040.png)
 - 900 `#171717` ![#171717](https://via.placeholder.com/15/171717/171717.png)

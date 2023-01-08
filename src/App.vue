@@ -13,12 +13,13 @@
         </div>
       </transition>
     </router-view>
-
+    <!--
     <transition name="fade_slow">
       <div id="tool-box" v-show="isBottom == true">
         <img id="tool_move-top" src="@/icons/arrow-up.svg" @click="scrollUp" />
       </div>
     </transition>
+    -->
 
     <!-- margin at bottom of all pages -->
     <footer></footer>

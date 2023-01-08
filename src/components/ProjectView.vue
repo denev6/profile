@@ -46,7 +46,7 @@ export default {
   margin-top: 0px;
   width: 90%;
   border: none;
-  border-top: 1px solid #a3a3a3;
+  border-top: 1px solid #d4d4d4;
 }
 .project_card > h3 {
   margin-bottom: 1.6rem;
