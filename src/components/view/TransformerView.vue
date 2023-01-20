@@ -28,9 +28,9 @@
                 </a></li>
             <li>결과: 최종 2위 수상</li>
             <li>Private Score: 0.56172</li>
-            <li>Optimizer: AdamW</li>
             <li>Model: <a href="https://github.com/tae898/erc" target="_blank">Emoberta-large (tae898)</a></li>
         </ul>
+        <img class="img-shadow" src="@/assets/dacon.png" alt="수상 증명서"/>
         </p>
         <h3>기록</h3>
         <p>
