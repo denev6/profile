@@ -27,16 +27,12 @@ const sub = [
     icons: ["huggingface"],
   },
   {
-    text: "GitHub",
-    icons: ["github"],
-  },
-  {
     text: "Conda",
     icons: ["anaconda"],
   },
   {
-    text: "C/C++",
-    icons: ["cpp"],
+    text: "Go",
+    icons: ["golang"],
   },
 ];
 

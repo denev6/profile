@@ -5,10 +5,10 @@
 
   <!-- Project details -->
   <div class="detail_router-wrapper">
-    <span class="detail_router" @click="routeToPath('/project')">
+    <a class="detail_router" @click="routeToPath('/project')">
       <img :src="getIconSrc('project')" />
       <span>Project</span>
-    </span>
+    </a>
     <a
       class="detail_router"
       target="_blank"
@@ -137,8 +137,8 @@ a:hover {
   border-bottom: 1px solid #d4d4d4;
 }
 .detail_router {
-  width: 5rem;
-  height: 5rem;
+  width: 4rem;
+  height: 4.5rem;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -146,8 +146,6 @@ a:hover {
   padding: 2rem;
   cursor: pointer;
   border-radius: 2rem;
-}
-.detail_router:hover{
   background-color: #f5f5f540;
   box-shadow: 0 1px 2px 0 rgb(0 0 0 / 0.05);
 }
