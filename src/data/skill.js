@@ -4,35 +4,35 @@ const main = [
     icons: ["python"],
   },
   {
-    text: "PyTorch",
-    icons: ["pytorch"],
+    text: "Go",
+    icons: ["golang"],
   },
   {
-    text: "Scikit-learn",
-    icons: ["scikitlearn"],
+    text: "PyTorch",
+    icons: ["pytorch"],
   },
   {
     text: "Pandas",
     icons: ["pandas"],
   },
   {
-    text: "OpenCV",
-    icons: ["opencv"],
+    text: "Conda",
+    icons: ["anaconda"],
   },
 ];
 
 const sub = [
   {
+    text: "Scikit-learn",
+    icons: ["scikitlearn"],
+  },
+  {
+    text: "OpenCV",
+    icons: ["opencv"],
+  },
+  {
     text: "Transformers",
     icons: ["huggingface"],
-  },
-  {
-    text: "Conda",
-    icons: ["anaconda"],
-  },
-  {
-    text: "Go",
-    icons: ["golang"],
   },
 ];
 

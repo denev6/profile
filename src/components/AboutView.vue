@@ -146,8 +146,11 @@ a:hover {
   padding: 2rem;
   cursor: pointer;
   border-radius: 2rem;
-  background-color: #f5f5f540;
+  background-color: #f5f5f533;
   box-shadow: 0 1px 2px 0 rgb(0 0 0 / 0.05);
+}
+.detail_router:hover {
+  background-color: #f5f5f577;
 }
 .detail_router > img {
   width: 2.4rem;
